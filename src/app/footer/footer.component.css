@@ -1,0 +1,35 @@
+.footer {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.footer-icon img {
+    width: 50px; /* Tamaño del icono central */
+    margin-bottom: 1rem;
+}
+
+.footer-info {
+    margin-bottom: 1.5rem;
+}
+
+.footer-social a {
+    margin: 0 1rem;
+    display: inline-block;
+}
+
+.footer-social img {
+    width: 40px; /* Tamaño de los iconos de redes sociales */
+    transition: transform 0.3s; /* Animación al pasar el mouse */
+}
+
+.footer-social a:hover img {
+    transform: scale(1.7); /* Agranda el icono al pasar el mouse */
+}
+
+.footer-copyright {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #aaa; /* Color gris más claro para el texto del copyright */
+}

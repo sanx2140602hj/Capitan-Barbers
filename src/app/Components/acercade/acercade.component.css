@@ -1,0 +1,25 @@
+.container{
+    margin-top: 11rem;
+}
+h1{
+    
+    text-align: center;
+}
+img{
+    width: 100%;
+}
+p{
+font-size: 1.2rem;
+   margin: 3rem 9rem;
+    text-align: justify;
+}
+h2{
+    text-align: center;
+}
+@media screen and (max-width: 500px) {
+    p{
+        font-size: 1.2rem;
+           margin: 3rem;
+            text-align: justify;
+        }
+}

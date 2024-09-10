@@ -1,0 +1,115 @@
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden; /* Evita el desbordamiento de la imagen */
+  position: relative;
+}
+
+.image-side {
+  flex: 1;
+  position: relative;
+}
+
+.image-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra todo el div */
+  mask-image: linear-gradient(
+    250deg,
+    transparent 20%,
+    black 70%
+  ); /* Degradado */
+}
+
+.text-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.text-side .logo {
+  width: 100%; /* Ajusta según sea necesario */
+  margin-top: -6rem;
+  margin-bottom: 3rem;
+}
+.svg-divider {
+  display: none;
+}
+.text-side h4 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.pole-barber {
+  width: 100%;
+}
+.orden {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+}
+
+button {
+  background-color: white; /* Fondo blanco por defecto */
+  color: #000000; /* Color del texto y del borde */
+  border: 2px solid #000000; /* Borde del botón */
+  padding: 10px 20px; /* Espaciado interno */
+  font-weight: bold; /* Letras en negrita */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambia el cursor al pasar por el botón */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el efecto de hover */
+  border-radius: 10px;
+  padding: 1rem 5rem;
+  z-index: 99;
+}
+button:hover {
+  background-color: #000000; /* Fondo verde al pasar el cursor */
+  color: white; /* Texto blanco al pasar el cursor */
+  padding: 20px 30px; /* Expansión del padding al pasar el cursor */
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+/* Estilos para pantallas de 500px o menos */
+@media (max-width: 500px) {
+  .home-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-side img {
+    width: 100%;
+    height: auto;
+    mask-image: none; /* Elimina el degradado */
+  }
+
+  .svg-divider {
+    display: block;
+    width: 100%;
+    margin-top: -5rem; /* Ajusta para conectar visualmente la imagen con el SVG */
+  }
+
+  .text-side .logo {
+    display: none; /* Oculta el logo */
+  }
+  .text-side h4 {
+      margin-top:-25rem;
+      font-style: italic;
+      font-size: 1.5rem;
+      
+    }
+    .pole-barber {
+      margin-top: -1rem;
+    }
+    .total{
+margin-top: -20rem;
+margin-bottom: 15rem;
+    }
+    .orden {
+    margin:2rem;
+  }
+}

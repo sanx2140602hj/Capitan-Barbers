@@ -1,0 +1,55 @@
+.hero {
+    width: 100%;
+    margin-top: -4rem;
+  }
+  svg{margin-top: -13rem;}
+  h4{
+      margin-top: 3rem;
+      text-align: center;
+  font-style: italic;
+  margin-left: 25%;
+  margin-right: 25%;
+  }
+
+  /* ------------------------------------ */
+  .orden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+  }
+  
+  .cita {
+    background-color: white; /* Fondo blanco por defecto */
+    color: #000000; /* Color del texto y del borde */
+    border: 2px solid #000000; /* Borde del botón */
+    padding: 10px 20px; /* Espaciado interno */
+    font-weight: bold; /* Letras en negrita */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar por el botón */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el efecto de hover */
+    border-radius: 10px;
+    padding: 1rem 5rem;
+    z-index: 99;
+  }
+  .cita:hover {
+    background-color: #000000; /* Fondo verde al pasar el cursor */
+    color: white; /* Texto blanco al pasar el cursor */
+    padding: 20px 30px; /* Expansión del padding al pasar el cursor */
+    transition: all 0.3s ease; /* Transición suave */
+  }
+  
+/* ////////////////////////////////////////////////////////////////////////////////// */
+  /* Para dispositivos pequeños (menos de 500px) */
+  @media screen and (max-width: 500px) {
+ .hero{
+  margin-top: -1rem;
+ }
+ svg{margin-top: -5rem;}
+ h4{
+margin-left: 5%;
+margin-right: 5%;
+font-size: 1rem;
+}
+  }
+  
