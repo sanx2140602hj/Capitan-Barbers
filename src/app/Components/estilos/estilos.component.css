@@ -10,7 +10,15 @@
   margin-left: 25%;
   margin-right: 25%;
   }
-
+h3{
+  text-align: center;
+}
+h5{
+  margin: 3rem 15%;
+  text-align: justify;
+/*   margin-right: 15%;
+  margin-left: 15%; */
+}
   /* ------------------------------------ */
   .orden {
     display: flex;
@@ -38,6 +46,15 @@
     padding: 20px 30px; /* Expansión del padding al pasar el cursor */
     transition: all 0.3s ease; /* Transición suave */
   }
+  .carousel {
+    width: 70%; /* Ancho de las imágenes del carrusel en 75% */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
+  .carousel-inner img {
+    width: 100%; /* Asegura que la imagen ocupe el 100% del ancho del contenedor */
+    height: 30rem; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; /* Recorta la imagen para llenar el contenedor sin distorsión */
+  }
   
 /* ////////////////////////////////////////////////////////////////////////////////// */
   /* Para dispositivos pequeños (menos de 500px) */
@@ -50,6 +67,9 @@
 margin-left: 5%;
 margin-right: 5%;
 font-size: 1rem;
+}
+.carousel {
+  width: 100%; /* Ancho de las imágenes del carrusel en 75% */
 }
   }
   

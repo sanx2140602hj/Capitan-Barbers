@@ -14,7 +14,7 @@
 
 .image-side img {
   width: 100%;
-  height: 100%;
+  height: 600px;
   object-fit: cover; /* Asegura que la imagen cubra todo el div */
   mask-image: linear-gradient(
     250deg,
@@ -55,9 +55,9 @@
 }
 
 button {
-  background-color: white; /* Fondo blanco por defecto */
-  color: #000000; /* Color del texto y del borde */
-  border: 2px solid #000000; /* Borde del botón */
+  background-color: rgba(255, 255, 255, 0); /* Fondo blanco por defecto */
+  color: white; /* Color del texto y del borde */
+  border: 2px solid white; /* Borde del botón */
   padding: 10px 20px; /* Espaciado interno */
   font-weight: bold; /* Letras en negrita */
   font-size: 16px; /* Tamaño de fuente */
@@ -68,14 +68,43 @@ button {
   z-index: 99;
 }
 button:hover {
-  background-color: #000000; /* Fondo verde al pasar el cursor */
+  background-color: #0000003d; /* Fondo verde al pasar el cursor */
   color: white; /* Texto blanco al pasar el cursor */
   padding: 20px 30px; /* Expansión del padding al pasar el cursor */
   transition: all 0.3s ease; /* Transición suave */
 }
+/* ----------------- */
+
+body {
+  height: 1000vh;
+}
+.luz {
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../../../assets/different-machines-barbershop.jpg);
+  background-attachment: fixed;
+
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topOne {
+  margin-bottom: -15rem;
+  transform: scaleX(-1) scaleY(-1); /* Voltea en modo espejo horizontal y vertical */
+}
+.topTwo {
+  margin-top: -15rem;
+}
+/* ----------------- */
 
 /* Estilos para pantallas de 500px o menos */
 @media (max-width: 500px) {
+  body {
+    height: 500vh;
+  }
   .home-section {
     flex-direction: column;
     text-align: center;
@@ -97,19 +126,23 @@ button:hover {
     display: none; /* Oculta el logo */
   }
   .text-side h4 {
-      margin-top:-25rem;
-      font-style: italic;
-      font-size: 1.5rem;
-      
-    }
-    .pole-barber {
-      margin-top: -1rem;
-    }
-    .total{
-margin-top: -20rem;
-margin-bottom: 15rem;
-    }
-    .orden {
-    margin:2rem;
+    margin-top: -25rem;
+    font-style: italic;
+    font-size: 1.5rem;
+  }
+   .luz {
+    margin-top: -15rem;
+/*     height: auto;
+ */
+  }
+  .orden {
+    margin: 2rem;
+  }
+
+  .topOne {
+    margin-top: -39rem;
+  }
+  .topTwo {
+    margin-top: -6rem;
   }
 }
