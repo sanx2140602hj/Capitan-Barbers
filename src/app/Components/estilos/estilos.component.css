@@ -19,6 +19,9 @@ h5{
 /*   margin-right: 15%;
   margin-left: 15%; */
 }
+p{
+  margin-top: 10px;
+}
   /* ------------------------------------ */
   .orden {
     display: flex;

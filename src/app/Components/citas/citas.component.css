@@ -1,44 +1,63 @@
-.container{
-    margin-top: 15rem;
-    margin-bottom: 5rem;
-}
+.fondo {
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23CACACA' stroke-width='3.7' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+    padding: 6rem /* Espaciado interno sin afectar el fondo */
+  }
+  h3{
+    text-align: center;
+    margin-top: 15px;
+  }
+  h5{
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 2rem;
+  }
+  h6{
+    margin-top: 15px;
+  }
+  .container {
+    margin-top: 5rem;
+  }
 .image-container {
-    display: flex; /* Utiliza Flexbox para distribuir las imágenes */
-    justify-content: space-between; /* Espacio entre las imágenes */
-    align-items: flex-start; /* Alinea las imágenes en la parte superior */
-    gap: 1rem; /* Espacio entre cada contenedor de imagen */
+  display: flex; /* Utiliza Flexbox para distribuir las imágenes */
+  justify-content: space-between; /* Espacio entre las imágenes */
+  align-items: flex-start; /* Alinea las imágenes en la parte superior */
+  gap: 1rem; /* Espacio entre cada contenedor de imagen */
 }
 
 .image-item {
-    text-align: center; /* Centra el texto debajo de cada imagen */
+  text-align: center; /* Centra el texto debajo de cada imagen */
 }
 
 .image-container img {
-    width: 100%; /* Ajusta el ancho de la imagen al contenedor */
-    max-width: 300px; /* Ancho máximo de cada imagen */
-    border-radius: 8px; /* Bordes redondeados opcionales */
-    transition: transform 0.3s ease;
-    cursor: pointer;
+  width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+  max-width: 300px; /* Ancho máximo de cada imagen */
+  border-radius: 8px; /* Bordes redondeados opcionales */
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 @media (min-width: 501px) {
-    .image-container img:hover {
-        transform: translateY(-1rem); /* Eleva la imagen 10px hacia arriba */
-        box-shadow: 0 10px 10px -.3rem #555; /* Sombra en la parte inferior */    }
+  .image-container img:hover {
+    transform: translateY(-1rem); /* Eleva la imagen 10px hacia arriba */
+    box-shadow: 0 10px 10px -0.3rem #555; /* Sombra en la parte inferior */
+  }
 }
 .image-item p {
-    margin-top: 0.5rem; /* Espacio entre la imagen y el texto */
-    font-size: 14px; /* Tamaño de fuente del texto */
+  margin-top: 0.5rem; /* Espacio entre la imagen y el texto */
 }
 
 /* Media Query para pantallas pequeñas */
 @media (max-width: 500px) {
-    .image-container {
-        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
-        align-items: center; /* Centra las imágenes */
+  .fondo{
+    padding: 1rem/* Espaciado interno sin afectar el fondo */
 
-    }
-    .image-container {
-        flex-direction: column;
-        align-items: center;
-    }
+  }
+  .image-container {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    align-items: center; /* Centra las imágenes */
+  }
+  .image-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
