@@ -1,37 +1,39 @@
 <div *ngIf="isDesktop; else mobileTemplate">
-<div class="home-section" data-aos="fade-right" data-aos-duration="6000">
+    <div class="home-section" data-aos="fade-right" data-aos-duration="6000">
 
-    <div class="text-side" data-aos="fade-left" data-aos-duration="6000">
-        <!-- Logo y texto -->
-        <h4>
-            "Un buen corte de cabello es más que estética; es tu carta de presentación. Refleja tu personalidad, confianza y estilo único. 
-            Elige un corte que hable por ti, que te haga sentir seguro y listo para conquistar el mundo."
-                </h4>
-        <button>Agendar cita</button>
+        <div class="text-side" data-aos="fade-left" data-aos-duration="6000">
+            <!-- Logo y texto -->
+            <h4>
+                "Un buen corte de cabello es más que estética; es tu carta de presentación. Refleja tu personalidad,
+                confianza y estilo único.
+                Elige un corte que hable por ti, que te haga sentir seguro y listo para conquistar el mundo."
+            </h4>
+            <button>Agendar cita</button>
+        </div>
+
+        <div class="image-side">
+            <!-- Imagen de fondo -->
+            <img src="../../../../assets/citas-(3).jpg" alt="Imagen de Barbería">
+        </div>
     </div>
-
-    <div class="image-side">
-        <!-- Imagen de fondo -->
-        <img src="../../../../assets/citas-(3).jpg" alt="Imagen de Barbería">
-     </div>
-</div>
 </div>
 <ng-template #mobileTemplate>
     <div class="home-section" data-aos="fade-right" data-aos-duration="6000">
 
 
-    
+
         <div class="image-side">
             <!-- Imagen de fondo -->
             <img src="../../../../assets/citas-(3).jpg" alt="Imagen de Barbería">
-         </div>
+        </div>
 
-         <div class="text-side" data-aos="fade-left" data-aos-duration="6000">
+        <div class="text-side" data-aos="fade-left" data-aos-duration="6000">
             <!-- Logo y texto -->
             <h4>
-                "Un buen corte de cabello es más que estética; es tu carta de presentación. Refleja tu personalidad, confianza y estilo único. 
+                "Un buen corte de cabello es más que estética; es tu carta de presentación. Refleja tu personalidad,
+                confianza y estilo único.
                 Elige un corte que hable por ti, que te haga sentir seguro y listo para conquistar el mundo."
-                    </h4>
+            </h4>
             <button>Agendar cita</button>
         </div>
 
