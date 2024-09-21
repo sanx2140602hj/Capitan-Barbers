@@ -65,13 +65,13 @@ button {
   cursor: pointer; /* Cambia el cursor al pasar por el botón */
   transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el efecto de hover */
   border-radius: 10px;
-  padding: 1rem 5rem;
+  padding: 1.5rem 5rem;
   z-index: 99;
 }
 button:hover {
   background-color: #0000003d; /* Fondo verde al pasar el cursor */
   color: white; /* Texto blanco al pasar el cursor */
-  padding: 20px 30px; /* Expansión del padding al pasar el cursor */
+  padding: 3rem 9rem; /* Expansión del padding al pasar el cursor */
   transition: all 0.3s ease; /* Transición suave */
 }
 /* ----------------- */
@@ -102,7 +102,16 @@ body {
   margin-top: -15rem;
 }
 /* ----------------- */
+.fondo2{    background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23CACACA' stroke-width='3.7' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+}
 
+.fa-solid{font-size: 1.1rem;
+margin: 10px;
+margin-top: -10px;}
+.text{
+  text-align: center; padding: 1.5rem;
+}
 /* Estilos para pantallas de 500px o menos */
 @media (max-width: 500px) {
   body {
@@ -147,6 +156,9 @@ body {
   }
   .topTwo {
     margin-top: -6rem;
+  }
+  .text{
+    padding: 0.5rem;
   }
 }
 

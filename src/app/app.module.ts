@@ -12,6 +12,7 @@ import { CabelloComponent } from './Components/citas/cabello/cabello.component';
 import { AcercadeComponent } from './Components/acercade/acercade.component';
 import { EstilosComponent } from './Components/estilos/estilos.component';
 import { CitasComponent } from './Components/citas/citas.component';
+import { EstiloComponent } from './Components/home/estilo/estilo.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CitasComponent } from './Components/citas/citas.component';
     BarbaComponent,
     InfantilComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    EstiloComponent
   ],
   imports: [
     BrowserModule,
