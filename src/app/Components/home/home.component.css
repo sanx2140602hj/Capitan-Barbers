@@ -109,8 +109,15 @@ body {
 .fa-solid{font-size: 1.1rem;
 margin: 10px;
 margin-top: -10px;}
+.border{
+  padding: 1.5rem;
+}
 .text{
-  text-align: center; padding: 1.5rem;
+  text-align: center; 
+}
+.movil{
+  display: none;
+  text-align: center;
 }
 /* Estilos para pantallas de 500px o menos */
 @media (max-width: 500px) {
@@ -157,8 +164,11 @@ margin-top: -10px;}
   .topTwo {
     margin-top: -6rem;
   }
-  .text{
+  .border{
     padding: 0.5rem;
+  }
+  .movil{
+    display: block;
   }
 }
 

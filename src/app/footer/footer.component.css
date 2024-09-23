@@ -33,3 +33,7 @@
     font-size: 0.9rem;
     color: #aaa; /* Color gris más claro para el texto del copyright */
 }
+
+a{
+    cursor: pointer;
+}

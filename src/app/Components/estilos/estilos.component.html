@@ -48,7 +48,7 @@
             <!-- Carrusel -->
             <div id="corteModerno" class="carousel slide">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active" id="Hide-Fade">
                         <img src="../../../assets/tipos-cortes/Corte-moderno-desvanecido.jpg" class="d-block w-100"
                             alt="...">
                         <h4>Hide Fade</h4>
@@ -60,7 +60,7 @@
                         </h4>
                     </div>
                     <div class="carousel-item">
-                        <img src="../../../assets/tipos-cortes/Corte-moderno-desvanecido-bajo.png" class="d-block w-100"
+                        <img src="../../../assets/tipos-cortes/Corte-moderno-desvanecido-bajo.jpg" class="d-block w-100"
                             alt="...">
                         <h4>Low Fade</h4>
                     </div>
@@ -70,16 +70,16 @@
                         </h4>
                     </div>
                     <div class="carousel-item">
-                        <img src="../../../assets/tipos-cortes/Buzz-cut.png" class="d-block w-100" alt="...">
+                        <img src="../../../assets/tipos-cortes/Buzz-cut.jpg" class="d-block w-100" alt="...">
                         <h4>Buzz Cut</h4>
                     </div>
                     <div class="carousel-item">
-                        <img src="../../../assets/tipos-cortes/Burst-fade.png" class="d-block w-100"
+                        <img src="../../../assets/tipos-cortes/Burst-fade.jpg" class="d-block w-100"
                             alt="Crédito: Instagram.com/vitaly.melchenko.">
                         <h4>Burst fade</h4>
                     </div>
                     <div class="carousel-item">
-                        <img src="../../../assets/tipos-cortes/Drop-fade.png" class="d-block w-100"
+                        <img src="../../../assets/tipos-cortes/Drop-fade.jpg" class="d-block w-100"
                             alt="Crédito: Instagram.com/tamas_tanos.">
                         <h4>Drop fade</h4>
                     </div>
@@ -103,7 +103,7 @@
                 </button>
             </div>
             <div class="orden">
-                <button class="cita">Agenda tu cita</button>
+                <button (click)="goToWhatsApp()" class="cita">Agenda tu cita</button>
             </div>
         </div>
         <div class="container">
@@ -162,7 +162,7 @@
                 </button>
             </div>
             <div class="orden">
-                <button class="cita">Agenda tu cita</button>
+                <button (click)="goToWhatsApp()" class="cita">Agenda tu cita</button>
             </div>
 
         </div>

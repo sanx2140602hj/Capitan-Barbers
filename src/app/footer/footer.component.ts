@@ -6,5 +6,32 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
-
+    instagram() {
+        window.open('https://www.instagram.com/barber.shop_rs/?utm_source=qr', '_blank');
+    }
+    facebook() {
+        window.open('https://www.facebook.com/share/DVbELsRfzB7zHiQW/?mibextid=qi2Omg', '_blank');
+    }
+    goToWhatsApp() {
+      const phoneNumber = "2383035208"; // Número de WhatsApp
+      const currentTime = new Date();
+      const hours = currentTime.getHours();
+      let message = '';
+  
+      if (hours >= 8 && hours < 12) {
+          message = "¡Buenos días! Me gustaría agendar un corte de cabello. ¿Tienen disponibilidad hoy?";
+      } else if (hours >= 12 && hours < 20) {
+          message = "¡Buenas tardes! ¿Habrá algún espacio para un corte de cabello hoy? Me encantaría visitar su barbería.";
+      } else if (hours >= 20 && hours < 24) {
+          message = "¡Buenas noches! ¿Tendrán algún espacio disponible para un corte mañana? ¡Gracias!";
+      } else {
+          message = "Hola, me gustaría saber si habrá algún espacio disponible para un corte de cabello cuando abran. ¡Gracias de antemano!";
+      }
+  
+      // Codificar el mensaje para evitar problemas de caracteres
+      const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank');
+  }
+  
+  
 }
